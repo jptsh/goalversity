@@ -1,0 +1,30 @@
+// Specific CSS for your home-page
+.brand-color {
+    color: $brand-color;
+}
+
+.body-content {
+    text-align: center;
+}
+
+.divider {
+    height: 1px;
+    margin: 96px 0;
+    background: rgba(0, 0, 0, 0.2);
+}
+
+.brand-title-body {
+    font-size: 50px;
+    font-weight: bold;
+    text-shadow: 0px 1px rgba(0, 0, 0, 0.2);
+    margin-bottom: 10px;
+}
+
+.brand-p {
+    font-size: 18px;
+    font-weight: lighter;
+    color:black;
+    opacity: 0.6;
+    margin-bottom: 30px;
+}
+

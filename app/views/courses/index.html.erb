@@ -1,0 +1,53 @@
+<div class="navbar navbar-expand-sm navbar-light navbar-lewagon navbar-light">
+        <div class="">
+            <%= link_to root_path, class: "navbar-brand" do %>
+            Goalversity
+                <!-- <%= image_tag "https://raw.githubusercontent.com/lewagon/fullstack-images/master/uikit/logo.png" %> -->
+            <% end %>
+        </div>
+        <div class="">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item add-space">
+                    <%= link_to "Courses", courses_path, class: "nav-link" %>
+                </li>
+                <li class="nav-item add-space">
+                    <%= link_to "Practice", "#", class: "nav-link" %>
+                </li>
+                <li class="nav-item add-space">
+                    <%= link_to "Daily", "#", class: "nav-link" %>
+                </li>
+            </ul>
+        </div>
+         <div class="">
+             <ul class="navbar-nav mr-auto">
+                <li class="nav-item">
+                    <%= link_to "Logout", courses_path, class: "nav-link" %>
+                </li>
+            </ul>
+        </div>
+</div>
+
+<div class="container">
+<h1>Our Courses</h1>
+    <div class="row">
+        <% @courses.each do |course| %>
+            <div class="card-trip">
+                <img src="https://raw.githubusercontent.com/lewagon/fullstack-images/master/uikit/greece.jpg" />
+                <div class="card-trip-infos">
+                        <div>
+                        <h2><%= course.title %></h2>
+                        <p>Short description here!</p>
+                        </div>
+                    <h2 class="card-trip-pricing">£99.99</h2>
+                    <img src="https://kitt.lewagon.com/placeholder/users/krokrob" class="card-trip-user avatar-bordered" />
+                </div>
+            </div>
+        <% end %>
+    </div>
+</div>
+
+<hr>
+        
+          
+        
+        
