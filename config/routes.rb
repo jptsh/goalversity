@@ -1,9 +1,3 @@
 Rails.application.routes.draw do
   # For details on the DSL available within this file, see https://guides.rubyonrails.org/routing.html
-  root to: 'goalversity#index'
-  get '/showcase', to: 'goalversity#showcase'
-  resources :courses, only: [:index, :show, :new, :create] do
-    resources :user_courses, only: [:show]
-    resources :reviews, only: [:create]
-  end
 end

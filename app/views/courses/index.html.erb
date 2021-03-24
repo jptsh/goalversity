@@ -32,7 +32,7 @@
     <div class="row">
         <% @courses.each do |course| %>
             <div class="card-trip">
-                <img src="https://raw.githubusercontent.com/lewagon/fullstack-images/master/uikit/greece.jpg" />
+                <%= cl_image_tag(course.photo.key, width: 300, height: 200, crop: :fill) %>
                 <div class="card-trip-infos">
                         <div>
                         <h2><%= course.title %></h2>
@@ -44,10 +44,7 @@
             </div>
         <% end %>
     </div>
+<hr>
+    <%= link_to "Add a new course", new_course_path, class: "btn btn-primary btn-lg justify-content-center" %>
 </div>
 
-<hr>
-        
-          
-        
-        

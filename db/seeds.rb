@@ -5,8 +5,12 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
+require "open-uri"
+
+file = URI.open('https://giantbomb1.cbsistatic.com/uploads/original/9/99864/2419866-nes_console_set.png')
 
 User.destroy_all
+Course.destroy_all
 
 User.create!(
   username: 'light',
@@ -32,17 +36,4 @@ User.create!(
     password: 'Test3'
 )
 
-Course.create!(
-    title: "My first test course",
-    duration: 2
-)
-
-Course.create!(
-    title: "My second test course",
-    duration: 1
-)
-
-Course.create!(
-    title: "My third test course",
-    duration: 3
-)
+#Course Seeds
